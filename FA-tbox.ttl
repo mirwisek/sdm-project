@@ -1,0 +1,77 @@
+@prefix : <http://www.fraudanalytix.com/schema/> .
+@prefix l: <http://www.fraudanalytix.com/schema/l/> .
+@prefix f: <http://www.fraudanalytix.com/schema/f/> .
+@prefix e: <http://www.fraudanalytix.com/schema/e/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+
+<http://www.fraudanalytix.com/schema/> dc:creator "Mirwise" ;
+	dc:description "New ontology description"@en ;
+	dc:title "Fraud Analytix"@en ;
+	rdf:type owl:Ontology ;
+	owl:versionInfo "1.0"@en .
+
+:Attribute rdf:type owl:Class ;
+	rdfs:label "Attribute"@en .
+
+:File rdf:type owl:Class ;
+	rdfs:label "File"@en .
+
+e:PreprocessedFile rdf:type owl:Class ;
+	rdfs:label "PreprocessedFile"@en ;
+	rdfs:subClassOf :File .
+
+e:fileGeneratedFrom rdf:type owl:ObjectProperty ;
+	rdfs:domain e:PreprocessedFile ;
+	rdfs:label "fileGeneratedFrom"@en ;
+	rdfs:range f:FormattedFile .
+
+f:FormattedFile rdf:type owl:Class ;
+	rdfs:label "FormattedFile"@en ;
+	rdfs:subClassOf :File .
+
+:hasAttribute rdf:type owl:ObjectProperty ;
+	rdfs:domain :File ;
+	rdfs:label "hasAttribute"@en ;
+	rdfs:range :Attribute .
+
+l:DataFile rdf:type owl:Class ;
+	rdfs:label "DataFile"@en ;
+	rdfs:subClassOf :File .
+
+l:DataProvider rdf:type owl:Class ;
+	rdfs:label "DataProvider"@en .
+
+l:DataSources rdf:type owl:Class ;
+	rdfs:label "DataSources"@en .
+
+l:FileVersion rdf:type owl:Class ;
+	rdfs:label "FileVersion"@en ;
+	rdfs:subClassOf f:FormattedFile .
+
+l:hasDataFile rdf:type owl:ObjectProperty ;
+	rdfs:domain l:DataSources ;
+	rdfs:label "hasDataFile"@en ;
+	rdfs:range l:DataFile ;
+	rdfs:subPropertyOf l:providesDataFile .
+
+l:hasDataProvider rdf:type owl:ObjectProperty ;
+	rdfs:domain l:DataSources ;
+	rdfs:label "hasDataProvider"@en ;
+	rdfs:range l:DataProvider ;
+	rdfs:subPropertyOf l:providesDataFile .
+
+l:hasFileVersion rdf:type owl:ObjectProperty ;
+	rdfs:domain l:DataFile ;
+	rdfs:label "hasFileVersion"@en ;
+	rdfs:range l:FileVersion .
+
+l:providesDataFile rdf:type owl:ObjectProperty ;
+	rdfs:domain l:DataProvider ;
+	rdfs:label "providesDataFile"@en ;
+	rdfs:range l:DataFile .
+
