@@ -17,5 +17,4 @@ Fraud Analytix relies on primary data sources such as transactions data and Geo 
 
 ## Graph
 
-<img alt="graph" height="100" src="./raw/fa-mapping-tbox.eps"/>
-<img alt="graph" height="100" src="./raw/fa-mapping-tbox.svg"/>
+<img alt="graph" height="900" src="./raw/fa-mapping-tbox.svg"/>
