@@ -1,0 +1,2102 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://www.fraudanalytix.com/schema> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/spec/> .
+@prefix skos: 		<http://www.w3.org/2004/02/skos/core#> .
+
+<http://www.fraudanalytix.com/schema> a owl:Ontology ;
+                                      dc:title "Fraud Analytix"@en; 
+                                      dc:description "Data Governance Model - Fraud Analytix"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 132 ###
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hascity> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascity"@iri-based, "hasCity"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/City> . 
+
+<http://www.fraudanalytix.com/schema/f/Mcc.csv/hasirsdescription> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasirsdescription"@iri-based, "hasIrsDescription"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Mcc.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Mcc.csv/Irs_description> . 
+
+<http://www.fraudanalytix.com/schema/l/hascardsprograms_2023-05-31_10-57-05> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascardsprograms_2023-05-31_10-57-05"@iri-based, "hasCardsPrograms_2023-05-31_10-57-05"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Card_programs.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Cards_programs_2023-05-31_10-57-05.csv> . 
+
+<http://www.fraudanalytix.com/schema/l/hascardsprograms_2023-05-28_11-30-01> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascardsprograms_2023-05-28_11-30-01"@iri-based, "hasCardsPrograms_2023-05-28_11-30-01"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Card_programs.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Cards_programs_2023-05-28_11-30-01.csv> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hascardsemail> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascardsemail"@iri-based, "hasCardsEmail"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Email> . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/haswithdrawlimit> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haswithdrawlimit"@iri-based, "hasWithdrawLimit"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Card_programs.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Card_programs.csv/Withdraw_limit> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hascardmembers> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascardmembers"@iri-based, "hasCardMembers"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Card_members> . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/hasstartdate> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasstartdate"@iri-based, "hasStartDate"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Card_programs.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Card_programs.csv/Start_date> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hascardno> a owl:ObjectProperty ;
+	rdfs:label "hascardno"@iri-based, "hasCardNo"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Card_no> . 
+
+<http://www.fraudanalytix.com/schema/f/Mcc.csv/hasirsreportable> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasirsreportable"@iri-based, "hasIrsReportable"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Mcc.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Mcc.csv/Irs_reportable> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hascustomerid> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascustomerid"@iri-based, "hasCustomerId"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Customer_id> . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/hascustomerid> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascustomerid"@iri-based, "hasCustomerId"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Transactions.csv/Customer_id> . 
+
+<http://www.fraudanalytix.com/schema/l/hasfilemcc_2023-05-31_10-57-05> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasfilemcc_2023-05-31_10-57-05"@iri-based, "hasFileMcc_2023-05-31_10-57-05"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Mcc.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Mcc_2023-05-31_10-57-05.csv> . 
+
+<http://www.fraudanalytix.com/schema/l/hasfilemcc_2023-05-28_11-30-01> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasfilemcc_2023-05-28_11-30-01"@iri-based, "hasFileMcc_2023-05-28_11-30-01"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Mcc.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Mcc_2023-05-28_11-30-01.csv> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hascardstatuspos> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascardstatuspos"@iri-based, "hasCardStatusPos"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Card_status_pos> . 
+
+<http://www.fraudanalytix.com/schema/l/hasfiletransactions> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:subPropertyOf <http://www.fraudanalytix.com/schema/l/hassource1> ;
+	rdfs:label "hasfiletransactions"@iri-based, "hasFileTransactions"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Clienta>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Transactions.csv> . 
+                                                            
+<http://www.fraudanalytix.com/schema/l/hasfiletransactions_2023-05-31_10-57-05> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasfiletransactions_2023-05-31_10-57-05"@iri-based, "hasFileTransactions_2023-05-31_10-57-05"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Transactions_2023-05-31_10-57-05.csv> . 
+
+<http://www.fraudanalytix.com/schema/l/hasfiletransactions_2023-05-28_11-30-01> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasfiletransactions_2023-05-28_11-30-01"@iri-based, "hasFileTransactions_2023-05-28_11-30-01"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Transactions_2023-05-28_11-30-01.csv> . 
+
+
+<http://www.fraudanalytix.com/schema/l/hasfilegeodata_2023-05-31_10-57-05> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasfilegeodata_2023-05-31_10-57-05"@iri-based, "hasFileGeodata_2023-05-31_10-57-05"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Geodata.json>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Geodata_2023-05-31_10-57-05.json> . 
+
+<http://www.fraudanalytix.com/schema/l/hasfilegeodata_2023-05-28_11-30-01> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasfilegeodata_2023-05-28_11-30-01"@iri-based, "hasFileGeodata_2023-05-28_11-30-01"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Geodata.json>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Geodata_2023-05-28_11-30-01.json> . 
+
+
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/customerid> a owl:ObjectProperty ;
+	rdfs:label "customerid"@iri-based, "hasCustomerId"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Customer_id> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hasediteddescription> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasediteddescription"@iri-based, "hasEditedDescription"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Edited_description> . 
+
+<http://www.fraudanalytix.com/schema/f/Mcc.csv/hasusdadescription> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasusdadescription"@iri-based, "hasUsdaDescription"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Mcc.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Mcc.csv/Usda_description> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasavsstatus> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasavsstatus"@iri-based, "hasAvsStatus"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Avs_status> . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/hascoordinates> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascoordinates"@iri-based, "hasCoordinates"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Transactions.csv/Coordinates> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hascardstatus> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascardstatus"@iri-based, "hasCardStatus"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Card_status> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/haserrcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haserrcode"@iri-based, "hasErrCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Err_code> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hascvvstatus> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascvvstatus"@iri-based, "hasCvvStatus"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Ccv_status> . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/hasserviceid> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasserviceid"@iri-based, "hasServiceId"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Transactions.csv/Service_id> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hasmobileno> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasmobileno"@iri-based, "hasMobileNo"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Mobile_no> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/haszipcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haszipcode"@iri-based, "hasZipCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Zip_code> . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/hasisvirtualavailable> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasisvirtualavailable"@iri-based, "hasIsVirtualAvailable"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Card_programs.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Card_programs.csv/Is_virtual_available> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hasdrivinglicenseno> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasdrivinglicenseno"@iri-based, "hasDrivingLicenseNo"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Driving_license_no> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hasbilladdress> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasbilladdress"@iri-based, "hasBillAddress"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Bill_address> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/haspointofsrvcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haspointofsrvcode"@iri-based, "hasPointOfSrvCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Point_of_srv_code> . 
+
+<http://www.fraudanalytix.com/schema/f/Mcc.csv/hasmerchantcatcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasmerchantcatcode"@iri-based, "hasMerchantCatCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Mcc.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Mcc.csv/Merchant_cat_code> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/haslastacton> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haslastacton"@iri-based, "hasLastActOn"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Last_act_on> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hascardstatusatm> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascardstatusatm"@iri-based, "hasCardStatusAtm"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Card_status_atm> . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/hascardno> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascardno"@iri-based, "hasCardNo"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Transactions.csv/Card_no> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hasbillcity> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasbillcity"@iri-based, "hasBillCity"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Bill_city> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hascardscardno> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascardscardno"@iri-based, "hasCardsCardNo"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Card_no> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasismaincard> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasismaincard"@iri-based, "hasIsMainCard"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Is_main_card> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hasdateofbirth> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasdateofbirth"@iri-based, "hasDateOfBirth"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Date_of_birth> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hascrolwithdlimit> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascrolwithdlimit"@iri-based, "hasCrOlWithdLimit"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Cr_ol_withd_limit> . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/hasdevicetype> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasdevicetype"@iri-based, "hasDeviceType"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Transactions.csv/Device_type> . 
+
+<http://www.fraudanalytix.com/schema/l/hassource1> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hassource1"@iri-based, "hasSource1"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Datasource>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Clienta> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hasresponsecode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasresponsecode"@iri-based, "hasResponseCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Response_code> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasfistinacton> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasfistinacton"@iri-based, "hasFistInactOn"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Fist_inact_on> . 
+
+<http://www.fraudanalytix.com/schema/l/hassource2> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hassource2"@iri-based, "hasSource2"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Datasource>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Geodata.json> . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/hasmaxl> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasmaxl"@iri-based, "hasMaxL"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Card_programs.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Card_programs.csv/Max_l> . 
+
+<http://www.fraudanalytix.com/schema/l/hassource3> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hassource3"@iri-based, "hasSource3"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Datasource>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Mcc.csv> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hasfirstname> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasfirstname"@iri-based, "hasFirstName"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/First_name> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hasdevicetype> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasdevicetype"@iri-based, "hasDeviceType"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Device_type> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hasirsdescription> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasIrsDescription"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Irs_description> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasworkphonno> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasworkphonno"@iri-based, "hasWorkPhonNo"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Work_phone_no> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/haslastname> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haslastname"@iri-based, "hasLastName"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Last_name> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hascrofwithdlimit> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascrofwithdlimit"@iri-based, "hasCrOfWithdLimit"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Cr_of_withd_limit> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasstatecode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasstatecode"@iri-based, "hasStateCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/State_code> . 
+
+<http://www.fraudanalytix.com/schema/l/hasfilecardprograms> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:subPropertyOf <http://www.fraudanalytix.com/schema/l/hassource1> ;
+	rdfs:label "hasfilecardprograms"@iri-based, "hasFileCardPrograms"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Clienta>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Card_programs.csv> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hascardscity> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascardscity"@iri-based, "hasCardsCity"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/City> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hascardsmobileno> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascardsmobileno"@iri-based, "hasCardsMobileNo"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Mobile_no> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasaddress2> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasaddress2"@iri-based, "hasAddress2"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Address2> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hasamountrequested> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasamountrequested"@iri-based, "hasAmountRequested"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Amount_requested> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hascombineddescription> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascombineddescription"@iri-based, "hasCombinedDescription"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Combined_description> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasaddress1> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasaddress1"@iri-based, "hasAddress1"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Address1> . 
+
+<http://www.fraudanalytix.com/schema/l/hasfilecards_2023-05-31_10-57-05> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasfilecards_2023-05-31_10-57-05"@iri-based, "hasFileCards_2023-05-31_10-57-05"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Cards_2023-05-31_10-57-05.csv> . 
+
+<http://www.fraudanalytix.com/schema/l/hasfilecards_2023-05-28_11-30-01> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasfilecards_2023-05-28_11-30-01"@iri-based, "hasFileCards_2023-05-28_11-30-01"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Cards_2023-05-28_11-30-01.csv> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasfirstacton> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasfirstacton"@iri-based, "hasFirstActOn"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/First_act_on> . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/hasamountrequested> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasamountrequested"@iri-based, "hasAmountRequested"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Transactions.csv/Amount_requested> . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/hascardno> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascardno"@iri-based, "hasCardNo"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Card_programs.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Card_programs.csv/Card_no> . 
+
+<http://www.fraudanalytix.com/schema/f/Mcc.csv/hasediteddescription> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasediteddescription"@iri-based, "hasEditedDescription"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Mcc.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Mcc.csv/Edited_description> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hasbillzipcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasbillzipcode"@iri-based, "hasBillZipCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Bill_zip_code> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hascoordinates> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascoordinates"@iri-based, "hasCoordinates"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Coordinates> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hascountryofbirth> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascountryofbirth"@iri-based, "hasCountryOfBirth"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Country_of_birth> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hasamountprocessed> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasamountprocessed"@iri-based, "hasAmountProcessed"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Amount_processed> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hastottransamount> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hastottransamount"@iri-based, "hasTotTransAmount"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Tot_trans_amount> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hasisinternational> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasisinternational"@iri-based, "hasIsInternational"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Is_international> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hasserviceid> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasserviceid"@iri-based, "hasServiceId"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Service_id> . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/hasfparamcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasfparamcode"@iri-based, "hasFparamCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Transactions.csv/Fparam_code> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hasnationalid> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasnationalid"@iri-based, "hasNationalID"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/National_id> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasstatusmapno> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasstatusmapno"@iri-based, "hasStatusMapNo"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Status_map_no> . 
+
+<http://www.fraudanalytix.com/schema/f/Mcc.csv/hascombineddescription> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascombineddescription"@iri-based, "hasCombinedDescription"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Mcc.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Mcc.csv/Combined_description> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hascurrency> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascurrency"@iri-based, "hasCurrency"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Currency> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hasaddress> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasaddress"@iri-based, "hasAddress"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Address> . 
+
+<http://www.fraudanalytix.com/schema/l/hasfilecustomers> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:subPropertyOf <http://www.fraudanalytix.com/schema/l/hassource1> ;
+	rdfs:label "hasfilecustomers"@iri-based, "hasFileCustomers"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Clienta>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Customers.csv> . 
+
+<http://www.fraudanalytix.com/schema/l/hasfilecustomers_2023-05-31_10-57-05> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasfilecustomers_2023-05-31_10-57-05"@iri-based, "hasFileCustomers_2023-05-31_10-57-05"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Customers_2023-05-31_10-57-05.csv> . 
+
+<http://www.fraudanalytix.com/schema/l/hasfilecustomers_2023-05-28_11-30-01> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasfilecustomers_2023-05-28_11-30-01"@iri-based, "hasFileCustomers_2023-05-28_11-30-01"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Customers_2023-05-28_11-30-01.csv> . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/hasresponsecode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasresponsecode"@iri-based, "hasResponseCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Transactions.csv/Response_code> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hashomephoneno> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hashomephoneno"@iri-based, "hasHomePhoneNo"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Home_phone_no> . 
+
+<http://www.fraudanalytix.com/schema/l/hasfilecards> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:subPropertyOf <http://www.fraudanalytix.com/schema/l/hassource1> ;
+	rdfs:label "hasfilecards"@iri-based, "hasFileCards"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/l/Clienta>;
+	rdfs:range <http://www.fraudanalytix.com/schema/l/Cards.csv> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasnlastdeclines> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasnlastdeclines"@iri-based, "hasNlastDeclines"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Nlast_declines> . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/haspointofsrvcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haspointofsrvcode"@iri-based, "hasPointOfSrvCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Transactions.csv/Point_of_srv_code> . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/hasminloadamount> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasminloadamount"@iri-based, "hasMinLoadAmount"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Card_programs.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Card_programs.csv/Min_load_amount> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hasusdadescription> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasusdadescription"@iri-based, "hasUsdaDescription"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Usda_description> . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/hasexpirationmonths> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasexpirationmonths"@iri-based, "hasExpirationMonths"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Card_programs.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Card_programs.csv/Expiration_month> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hascardscustomerid> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascardscustomerid"@iri-based, "hasCardsCustomerId"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Customer_id> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hasoccupation> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasoccupation"@iri-based, "hasOccupation"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Occupation> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hasemail> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasemail"@iri-based, "hasEmail"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Email> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hasgender> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasgender"@iri-based, "hasGender"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Gender> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hasbillcountrycode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasbillcountrycode"@iri-based, "hasBillCountryCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Bill_country_code> . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/hascurrency> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascurrency"@iri-based, "hasCurrency"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Transactions.csv/Currency> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasTotComsAmount> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasTotComsAmount"@iri-based, "hasTotComsAmount"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Tot_coms_amount> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hascardsgender> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascardsgender"@iri-based, "hasCardsGender"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Gender> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hasisomessagetype> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasisomessagetype"@iri-based, "hasIsoMessageType"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Iso_message_type> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasposolwithdlimit> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasposolwithdlimit"@iri-based, "hasPosOlWithdLimit"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Pos_ol_withd_limit> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasnameoncard> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasnameoncard"@iri-based, "hasNameOnCard"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Name_on_card> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hasfparamcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasfparamcode"@iri-based, "hasFparamCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Fparam_code> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hascountrycode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascountrycode"@iri-based, "hasCountryCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Country_code> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hascreatedon> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascreatedon"@iri-based, "hasCreatedOn"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Created_on> . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/hasmerchantcatcode> a owl:ObjectProperty ;
+	rdfs:label "hasmerchantcatcode"@iri-based, "hasMerchantCatCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Transactions.csv/Merchant_cat_code> . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/hasisinternational> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasisinternational"@iri-based, "hasIsInternational"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Transactions.csv/Is_international> . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/hasamountprocessed> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasamountprocessed"@iri-based, "hasAmountProcessed"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Transactions.csv/Amount_processed> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hasmerchantcatcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasmerchantcatcode"@iri-based, "hasMerchantCatCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Merchant_cat_code> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hasssn> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasssn"@iri-based, "hasSSN"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Ssn> . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/hasprogramid> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasprogramid"@iri-based, "hasProgramId"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Card_programs.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Card_programs.csv/Program_id> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasbirthcountrycode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasbirthcountrycode"@iri-based, "hasBirthCountryCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Birth_country_code> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasatmofwithdlimit> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasatmofwithdlimit"@iri-based, "hasAtmOfWithdLimit"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Atm_of_withd_limit> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hastransdtime> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hastransdtime"@iri-based, "hasTransDtime"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Trans_dtime> . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/hasbank> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasbank"@iri-based, "hasBank"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Card_programs.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Card_programs.csv/Bank> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasofacstatus> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasofacstatus"@iri-based, "hasOfacStatus"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Ofac_status> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hasirsreportable> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasirsreportable"@iri-based, "hasIrsReportable"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Irs_reportable> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/haslastinacton> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haslastinacton"@iri-based, "hasLastInactOn"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Last_inact_on> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/haslasttransdtime> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haslasttransdtime"@iri-based, "hasLastTransDtime"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Last_trans_dtime> . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/haspinlength> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haspinlength"@iri-based, "hasPinLength"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Card_programs.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Card_programs.csv/Pin_length> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/hastransactionid> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hastransactionid"@iri-based, "hasTransactionId"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Transaction_id> . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/hasisomessagetype> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasisomessagetype"@iri-based, "hasIsoMessageType"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Transactions.csv/Iso_message_type> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/haszippostalcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haszippostalcode"@iri-based, "hasZipPostalCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Zip_postal_code> . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/hascardprogram> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascardprogram"@iri-based, "hasCardProgram"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Card_programs.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Card_programs.csv/Card_program> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasnloststolens> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasnloststolens"@iri-based, "hasNlostStolens"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Nlost_stolens> . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/hasmartialstatus> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasmartialstatus"@iri-based, "hasMartialStatus"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Customers.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Customers.csv/Marital_status> . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/hasatmolwithdlimit> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasatmolwithdlimit"@iri-based, "hasAtmOlWithdLimit"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Cards.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Cards.csv/Atm_ol_withd_limit> . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/hastransdtime> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hastransdtime"@iri-based, "hasTransDtime"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Transactions.csv/Trans_dtime> . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/hastransactionid> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hastransactionid"@iri-based, "hasTransactionId"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Transactions.csv>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Transactions.csv/Transaction_id> . 
+###  Class Definitions (Number of Classes) 141 ###
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Currency> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Currency> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Currency"@iri-based, "currency"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Usda_description> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Mcc.csv/Usda_description> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Usda_description"@iri-based, "usda_description"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Last_inact_on> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Last_inact_on"@iri-based, "last_inact_on"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Work_phone_no> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Work_phone_no"@iri-based, "work_phone_no"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Email> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Email"@iri-based, "email"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Name_on_card> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Name_on_card"@iri-based, "name_on_card"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Cards_programs_2023-05-31_10-57-05.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:subClassOf <http://www.fraudanalytix.com/schema/f/Card_programs.csv> ;
+	rdfs:label "Cards_programs_2023-05-31_10-57-05.csv"@iri-based, "cards_programs_2023-05-31_10-57-05.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Cards_programs_2023-05-28_11-30-01.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:subClassOf <http://www.fraudanalytix.com/schema/f/Card_programs.csv> ;
+	rdfs:label "Cards_programs_2023-05-28_11-30-01.csv"@iri-based, "cards_programs_2023-05-28_11-30-01.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Merchant_cat_code> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Merchant_cat_code> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Merchant_cat_code"@iri-based, "merchant_cat_code"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/Response_code> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Response_code"@iri-based, "response_code"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Last_act_on> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Last_act_on"@iri-based, "last_act_on"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Customer_id> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Customer_id"@iri-based, "customer_id"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Mcc.csv/Edited_description> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "edited_description"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Irs_reportable> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Mcc.csv/Irs_reportable> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Irs_reportable"@iri-based, "irs_reportable"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Transactions_2023-05-31_10-57-05.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:subClassOf <http://www.fraudanalytix.com/schema/f/Transactions.csv> ;
+	rdfs:label "Transactions_2023-05-31_10-57-05.csv"@iri-based, "Transactions_2023-05-31_10-57-05.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/Card_program> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Card_program"@iri-based, "card_program"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/City> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "City"@iri-based, "city"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Nlost_stolens> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Nlost_stolens"@iri-based, "nlost_stolens"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Atm_ol_withd_limit> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Atm_ol_withd_limit"@iri-based, "atm_ol_withd_limit"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Customer_id> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Customer_id"@iri-based, "customer_id"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Home_phone_no> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Home_phone_no"@iri-based, "home_phone_no"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Clienta> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Clienta"@iri-based, "ClientA"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Amount_requested> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Amount_requested> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Amount_requested"@iri-based, "amount_requested"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/First_name> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "First_name"@iri-based, "first_name"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Atm_of_withd_limit> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Atm_of_withd_limit"@iri-based, "atm_of_withd_limit"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Mobile_no> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Mobile_no"@iri-based, "mobile_no"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Email> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Email"@iri-based, "email"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/Point_of_srv_code> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Point_of_srv_code"@iri-based, "point_of_srv_code"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Status_map_no> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Status_map_no"@iri-based, "status_map_no"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/Card_no> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Card_no"@iri-based, "card_no"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Cards.csv"@iri-based, "cards.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/City> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "City"@iri-based, "city"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Zip_postal_code> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Zip_postal_code"@iri-based, "zip_postal_code"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/Trans_dtime> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Trans_dtime"@iri-based, "trans_dtime"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Nlast_declines> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Nlast_declines"@iri-based, "nlast_declines"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Last_name> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Last_name"@iri-based, "last_name"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Cards.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Cards.csv"@iri-based, "cards.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Fist_inact_on> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Fist_inact_on"@iri-based, "fist_inact_on"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Customers.csv"@iri-based, "customers.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Geodata_2023-05-28_11-30-01.json> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:subClassOf <http://www.fraudanalytix.com/schema/f/Geodata.json> ;
+	rdfs:label "Geodata_2023-05-28_11-30-01.json"@iri-based, "geodata_2023-05-28_11-30-01.json"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Combined_description> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Mcc.csv/Combined_description> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Combined_description"@iri-based, "combined_description"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/Amount_processed> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Amount_processed"@iri-based, "amount_processed"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Gender> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Gender"@iri-based, "gender"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/Start_date> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Start_date"@iri-based, "start_date"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Transactions.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Transactions.csv"@iri-based, "transactions.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Gender> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Gender"@iri-based, "gender"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Tot_coms_amount> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Tot_coms_amount"@iri-based, "tot_coms_amount"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Country_code> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Country_code"@iri-based, "country_code"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Ccv_status> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Ccv_status"@iri-based, "ccv_status"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Amount_processed> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Amount_processed> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Amount_processed"@iri-based, "amount_processed"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/Pin_length> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Pin_length"@iri-based, "pin_length"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/National_id> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "National_id"@iri-based, "national_id"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Mcc_2023-05-28_11-30-01.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:subClassOf <http://www.fraudanalytix.com/schema/f/Mcc.csv> ;
+	rdfs:label "Mcc_2023-05-28_11-30-01.csv"@iri-based, "mcc_2023-05-28_11-30-01.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Mcc.csv/Combined_description> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "combined_description"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Card_status> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Card_status"@iri-based, "card_status"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/State_code> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "State_code"@iri-based, "state_code"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/Bank> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Bank"@iri-based, "bank"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Bill_address> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Bill_address"@iri-based, "bill_address"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Address1> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Address1"@iri-based, "address1"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Address2> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Address2"@iri-based, "address2"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Card_status_atm> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Card_status_atm"@iri-based, "card_status_atm"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Mcc.csv/Irs_reportable> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "irs_reportable"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Mcc.csv/Irs_description> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "irs_description"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Bill_country_code> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Bill_country_code"@iri-based, "bill_country_code"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Date_of_birth> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Date_of_birth"@iri-based, "date_of_birth"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Mcc.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Mcc.csv"@iri-based, "mcc.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Country_of_birth> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Country_of_birth"@iri-based, "country_of_birth"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Trans_dtime> a owl:Class;
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Trans_dtime> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Trans_dtime"@iri-based, "trans_dtime"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/Amount_requested> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Amount_requested"@iri-based, "amount_requested"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Card_members> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Card_members"@iri-based, "card_members"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Card_no> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Card_no> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Card_no"@iri-based, "card_no"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Is_main_card> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Is_main_card"@iri-based, "is_main_card"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/Max_l> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Max_l"@iri-based, "max_l"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Err_code> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Err_code"@iri-based, "err_code"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Point_of_srv_code> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Point_of_srv_code> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Point_of_srv_code"@iri-based, "point_of_srv_code"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/Program_id> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Program_id"@iri-based, "program_id"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Mcc.csv/Usda_description> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "usda_description"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet> a owl:Class; 
+
+	rdfs:isDefinedBy : ;
+	rdfs:label "joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Geodata.json> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Geodata.json"@iri-based, "geodata.json"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/Withdraw_limit> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Withdraw_limit"@iri-based, "withdraw_limit"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Service_id> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Service_id> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Service_id"@iri-based, "service_id"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Bill_zip_code> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Bill_zip_code"@iri-based, "bill_zip_code"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/Expiration_month> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Expiration_month"@iri-based, "expiration_month"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Card_status_pos> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Card_status_pos"@iri-based, "card_status_pos"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Iso_message_type> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Iso_message_type> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Iso_message_type"@iri-based, "iso_message_type"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Customers_2023-05-31_10-57-05.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:subClassOf <http://www.fraudanalytix.com/schema/f/Customers.csv> ;
+	rdfs:label "Customers_2023-05-31_10-57-05.csv"@iri-based, "customers_2023-05-31_10-57-05.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/Min_load_amount> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Min_load_amount"@iri-based, "min_load_amount"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Last_trans_dtime> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Last_trans_dtime"@iri-based, "last_trans_dtime"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Mcc.csv/Merchant_cat_code> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "merchant_cat_code"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Cards_2023-05-28_11-30-01.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:subClassOf <http://www.fraudanalytix.com/schema/f/Cards.csv> ;
+	rdfs:label "Cards_2023-05-28_11-30-01.csv"@iri-based, "cards_2023-05-28_11-30-01.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Card_programs.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Card_programs.csv"@iri-based, "card_programs.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Mcc_2023-05-31_10-57-05.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:subClassOf <http://www.fraudanalytix.com/schema/f/Mcc.csv> ;
+	rdfs:label "Mcc_2023-05-31_10-57-05.csv"@iri-based, "mcc_2023-05-31_10-57-05.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/Iso_message_type> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Iso_message_type"@iri-based, "iso_message_type"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/First_act_on> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "First_act_on"@iri-based, "first_act_on"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Ofac_status> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Ofac_status"@iri-based, "ofac_status"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/Currency> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Currency"@iri-based, "currency"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/Coordinates> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Coordinates"@iri-based, "coordinates"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Driving_license_no> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Driving_license_no"@iri-based, "driving_license_no"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Ssn> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Ssn"@iri-based, "ssn"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Response_code> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Response_code> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Response_code"@iri-based, "response_code"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/Merchant_cat_code> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Merchant_cat_code"@iri-based, "merchant_cat_code"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Transactions_2023-05-28_11-30-01.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:subClassOf <http://www.fraudanalytix.com/schema/f/Transactions.csv> ;
+	rdfs:label "Transactions_2023-05-28_11-30-01.csv"@iri-based, "Transactions_2023-05-28_11-30-01.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Birth_country_code> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Birth_country_code"@iri-based, "birth_country_code"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Datasource> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Datasource"@iri-based, "DataSource"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Fparam_code> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Fparam_code> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Fparam_code"@iri-based, "fparam_code"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Pos_ol_withd_limit> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Pos_ol_withd_limit"@iri-based, "pos_ol_withd_limit"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/Service_id> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Service_id"@iri-based, "service_id"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Geodata_2023-05-31_10-57-05.json> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:subClassOf <http://www.fraudanalytix.com/schema/f/Geodata.json> ;
+	rdfs:label "Geodata_2023-05-31_10-57-05.json"@iri-based, "geodata_2023-05-31_10-57-05.json"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Card_no> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Card_no"@iri-based, "card_no"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/Is_virtual_available> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Is_virtual_available"@iri-based, "is_virtual_available"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Customers.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Customers.csv"@iri-based, "customers.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Address> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Address"@iri-based, "address"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Transactions.csv"@iri-based, "transactions.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Cr_ol_withd_limit> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Cr_ol_withd_limit"@iri-based, "cr_ol_withd_limit"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Card_programs.csv"@iri-based, "card_programs.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Mcc.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Mcc.csv"@iri-based, "mcc.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/Fparam_code> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Fparam_code"@iri-based, "fparam_code"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Customers_2023-05-28_11-30-01.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:subClassOf <http://www.fraudanalytix.com/schema/f/Customers.csv> ;
+	rdfs:label "Customers_2023-05-28_11-30-01.csv"@iri-based, "customers_2023-05-28_11-30-01.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Edited_description> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Mcc.csv/Edited_description> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Edited_description"@iri-based, "edited_description"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Is_international> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Is_international> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Is_international"@iri-based, "is_international"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Bill_city> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Bill_city"@iri-based, "bill_city"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Transaction_id> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Transaction_id> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Transaction_id"@iri-based, "transaction_id"@en . 
+
+<http://www.fraudanalytix.com/schema/l/Cards_2023-05-31_10-57-05.csv> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:subClassOf <http://www.fraudanalytix.com/schema/f/Cards.csv> ;
+	rdfs:label "Cards_2023-05-31_10-57-05.csv"@iri-based, "cards_2023-05-31_10-57-05.csv"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/Customer_id> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Customer_id"@iri-based, "customer_id"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/Transaction_id> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Transaction_id"@iri-based, "transaction_id"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Zip_code> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Zip_code"@iri-based, "zip_code"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Occupation> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Occupation"@iri-based, "occupation"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Avs_status> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Avs_status"@iri-based, "avs_status"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Mobile_no> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Mobile_no"@iri-based, "mobile_no"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Coordinates> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Coordinates> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Coordinates"@iri-based, "coordinates"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Created_on> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Created_on"@iri-based, "created_on"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/Is_international> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Is_international"@iri-based, "is_international"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Irs_description> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Mcc.csv/Irs_description> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Irs_description"@iri-based, "irs_description"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Card_programs.csv/Card_no> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Card_no"@iri-based, "card_no"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Customer_id> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Customer_id> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Customer_id"@iri-based, "customer_id"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Transactions.csv/Device_type> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Device_type"@iri-based, "device_type"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet/Device_type> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Device_type> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Device_type"@iri-based, "device_type"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Customers.csv/Marital_status> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Marital_status"@iri-based, "marital_status"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Tot_trans_amount> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Tot_trans_amount"@iri-based, "tot_trans_amount"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Cards.csv/Cr_of_withd_limit> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Cr_of_withd_limit"@iri-based, "cr_of_withd_limit"@en . 
+
+
+# Geodata file
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Geodata.json"@iri-based, "geodata.json"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/Location_id> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Location_id"@iri-based, "location_id"@en . 
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/Latitude> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Latitude"@iri-based, "latitude"@en .
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/Longitude> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Longitude"@iri-based, "longitude"@en .
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/Country> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Country"@iri-based, "country"@en .
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/City> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "City"@iri-based, "city"@en .
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/Postal_code> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Postal_code"@iri-based, "postal_code"@en .
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/State> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "State"@iri-based, "state"@en .
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/Region> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Region"@iri-based, "region"@en .
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/Timezone> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Timezone"@iri-based, "timezone"@en .
+
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/haslocationid> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haslocationid"@iri-based, "haslocationid"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Geodata.json>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Geodata.json/Location_id> . 
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/haslatitude> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haslatitude"@iri-based, "haslatitude"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Geodata.json>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Geodata.json/Latitude> .
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/haslongitude> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haslongitude"@iri-based, "haslongitude"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Geodata.json>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Geodata.json/Longitude> .
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/hascity> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascity"@iri-based, "hascity"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Geodata.json>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Geodata.json/City> .
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/hasstate> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasstate"@iri-based, "hasstate"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Geodata.json>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Geodata.json/State> .
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/haspostalcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haspostalcode"@iri-based, "haspostalcode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Geodata.json>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Geodata.json/Postal_code> .
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/hascountry> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascountry"@iri-based, "hascountry"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Geodata.json>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Geodata.json/Country> .
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/hasregion> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasregion"@iri-based, "hasregion"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Geodata.json>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Geodata.json/Region> .
+
+<http://www.fraudanalytix.com/schema/f/Geodata.json/hastimezone> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hastimezone"@iri-based, "hastimezone"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/f/Geodata.json>;
+	rdfs:range <http://www.fraudanalytix.com/schema/f/Geodata.json/Timezone> .
+
+## --------------------------- e/joined_clientA_transactions_2023-05-31_10-57-05_mcc.parquet -------------------------  
+
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hascardno> a owl:ObjectProperty ;
+    rdfs:isDefinedBy : ;
+    rdfs:label "hascardno"@iri-based, "hasCardNo"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Card_no> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/customerid> a owl:ObjectProperty ;
+    rdfs:isDefinedBy : ;
+    rdfs:label "customerid"@iri-based, "hasCustomerId"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Customer_id> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasediteddescription> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasediteddescription"@iri-based, "hasEditedDescription"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Edited_description> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/haspointofsrvcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haspointofsrvcode"@iri-based, "hasPointOfSrvCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Point_of_srv_code> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasresponsecode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasresponsecode"@iri-based, "hasResponseCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Response_code> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasdevicetype> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasdevicetype"@iri-based, "hasDeviceType"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Device_type> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasirsdescription> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasIrsDescription"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Irs_description> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasamountrequested> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasamountrequested"@iri-based, "hasAmountRequested"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Amount_requested> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hascombineddescription> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascombineddescription"@iri-based, "hasCombinedDescription"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Combined_description> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hascoordinates> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascoordinates"@iri-based, "hasCoordinates"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Coordinates> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasamountprocessed> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasamountprocessed"@iri-based, "hasAmountProcessed"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Amount_processed> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasisinternational> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasisinternational"@iri-based, "hasIsInternational"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Is_international> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasserviceid> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasserviceid"@iri-based, "hasServiceId"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Service_id> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hascurrency> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascurrency"@iri-based, "hasCurrency"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Currency> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasusdadescription> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasusdadescription"@iri-based, "hasUsdaDescription"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Usda_description> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasisomessagetype> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasisomessagetype"@iri-based, "hasIsoMessageType"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Iso_message_type> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasfparamcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasfparamcode"@iri-based, "hasFparamCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Fparam_code> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasmerchantcatcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasmerchantcatcode"@iri-based, "hasMerchantCatCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Merchant_cat_code> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hastransdtime> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hastransdtime"@iri-based, "hasTransDtime"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Trans_dtime> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasirsreportable> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasirsreportable"@iri-based, "hasIrsReportable"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Irs_reportable> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hastransactionid> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hastransactionid"@iri-based, "hasTransactionId"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Transaction_id> . 
+
+
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Currency> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Currency> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Currency"@iri-based, "currency"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Usda_description> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Mcc.csv/Usda_description> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Usda_description"@iri-based, "usda_description"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Merchant_cat_code> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Merchant_cat_code> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Merchant_cat_code"@iri-based, "merchant_cat_code"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Irs_reportable> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Mcc.csv/Irs_reportable> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Irs_reportable"@iri-based, "irs_reportable"@en .                     
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Amount_requested> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Amount_requested> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Amount_requested"@iri-based, "amount_requested"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Combined_description> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Mcc.csv/Combined_description> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Combined_description"@iri-based, "combined_description"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Amount_processed> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Amount_processed> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Amount_processed"@iri-based, "amount_processed"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Trans_dtime> a owl:Class;
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Trans_dtime> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Trans_dtime"@iri-based, "trans_dtime"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Card_no> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Card_no> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Card_no"@iri-based, "card_no"@en . 
+
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Point_of_srv_code> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Point_of_srv_code> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Point_of_srv_code"@iri-based, "point_of_srv_code"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet"@en .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Service_id> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Service_id> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Service_id"@iri-based, "service_id"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Iso_message_type> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Iso_message_type> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Iso_message_type"@iri-based, "iso_message_type"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Response_code> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Response_code> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Response_code"@iri-based, "response_code"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Fparam_code> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Fparam_code> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Fparam_code"@iri-based, "fparam_code"@en .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Edited_description> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Mcc.csv/Edited_description> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Edited_description"@iri-based, "edited_description"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Is_international> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Is_international> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Is_international"@iri-based, "is_international"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Transaction_id> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Transaction_id> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Transaction_id"@iri-based, "transaction_id"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Coordinates> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Coordinates> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Coordinates"@iri-based, "coordinates"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Irs_description> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Mcc.csv/Irs_description> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Irs_description"@iri-based, "irs_description"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Customer_id> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Customer_id> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Customer_id"@iri-based, "customer_id"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Device_type> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Device_type> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Device_type"@iri-based, "device_type"@en . 
+
+## --------------------------- e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet ------------------------- 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hascardno> a owl:ObjectProperty ;
+       rdfs:isDefinedBy : ;
+       rdfs:label "hascardno"@iri-based, "hasCardNo"@en; 
+       rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+       rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Card_no> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/customerid> a owl:ObjectProperty ;
+       rdfs:isDefinedBy : ;
+       rdfs:label "customerid"@iri-based, "hasCustomerId"@en; 
+       rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+       rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Customer_id> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasediteddescription> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasediteddescription"@iri-based, "hasEditedDescription"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Edited_description> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/haspointofsrvcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haspointofsrvcode"@iri-based, "hasPointOfSrvCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Point_of_srv_code> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasresponsecode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasresponsecode"@iri-based, "hasResponseCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Response_code> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasdevicetype> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasdevicetype"@iri-based, "hasDeviceType"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Device_type> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasirsdescription> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasIrsDescription"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Irs_description> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasamountrequested> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasamountrequested"@iri-based, "hasAmountRequested"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Amount_requested> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hascombineddescription> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascombineddescription"@iri-based, "hasCombinedDescription"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Combined_description> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hascoordinates> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascoordinates"@iri-based, "hasCoordinates"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Coordinates> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasamountprocessed> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasamountprocessed"@iri-based, "hasAmountProcessed"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Amount_processed> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasisinternational> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasisinternational"@iri-based, "hasIsInternational"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Is_international> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasserviceid> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasserviceid"@iri-based, "hasServiceId"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Service_id> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hascurrency> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascurrency"@iri-based, "hasCurrency"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Currency> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasusdadescription> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasusdadescription"@iri-based, "hasUsdaDescription"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Usda_description> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasisomessagetype> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasisomessagetype"@iri-based, "hasIsoMessageType"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Iso_message_type> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasfparamcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasfparamcode"@iri-based, "hasFparamCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Fparam_code> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasmerchantcatcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasmerchantcatcode"@iri-based, "hasMerchantCatCode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Merchant_cat_code> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hastransdtime> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hastransdtime"@iri-based, "hasTransDtime"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Trans_dtime> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasirsreportable> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasirsreportable"@iri-based, "hasIrsReportable"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Irs_reportable> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hastransactionid> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hastransactionid"@iri-based, "hasTransactionId"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Transaction_id> . 
+
+
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Currency> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Currency> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Currency"@iri-based, "currency"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Usda_description> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Mcc.csv/Usda_description> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Usda_description"@iri-based, "usda_description"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Merchant_cat_code> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Merchant_cat_code> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Merchant_cat_code"@iri-based, "merchant_cat_code"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Irs_reportable> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Mcc.csv/Irs_reportable> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Irs_reportable"@iri-based, "irs_reportable"@en .                     
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Amount_requested> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Amount_requested> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Amount_requested"@iri-based, "amount_requested"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Combined_description> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Mcc.csv/Combined_description> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Combined_description"@iri-based, "combined_description"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Amount_processed> a owl:Class; 
+       owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Amount_processed> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Amount_processed"@iri-based, "amount_processed"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Trans_dtime> a owl:Class;
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Trans_dtime> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Trans_dtime"@iri-based, "trans_dtime"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Card_no> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Card_no> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Card_no"@iri-based, "card_no"@en . 
+
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Point_of_srv_code> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Point_of_srv_code> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Point_of_srv_code"@iri-based, "point_of_srv_code"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet> a owl:Class; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet"@en .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Service_id> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Service_id> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Service_id"@iri-based, "service_id"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Iso_message_type> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Iso_message_type> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Iso_message_type"@iri-based, "iso_message_type"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Response_code> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Response_code> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Response_code"@iri-based, "response_code"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Fparam_code> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Fparam_code> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Fparam_code"@iri-based, "fparam_code"@en .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Edited_description> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Mcc.csv/Edited_description> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Edited_description"@iri-based, "edited_description"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Is_international> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Is_international> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Is_international"@iri-based, "is_international"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Transaction_id> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Transaction_id> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Transaction_id"@iri-based, "transaction_id"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Coordinates> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Coordinates> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Coordinates"@iri-based, "coordinates"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Irs_description> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Mcc.csv/Irs_description> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Irs_description"@iri-based, "irs_description"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Customer_id> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Customer_id> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Customer_id"@iri-based, "customer_id"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Device_type> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Transactions.csv/Device_type> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Device_type"@iri-based, "device_type"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet> a owl:Class;
+	rdfs:isDefinedBy : ;
+	rdfs:label "joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet.json"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Location_id> a owl:Class;  
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Geodata.json/Location_id> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Location_id"@iri-based, "location_id"@en . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Latitude> a owl:Class;  
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Geodata.json/Latitude> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Latitude"@iri-based, "latitude"@en .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Longitude> a owl:Class;  
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Geodata.json/Longitude> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Longitude"@iri-based, "longitude"@en .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Country> a owl:Class; 
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Geodata.json/Country> ; 
+	rdfs:isDefinedBy : ;
+	rdfs:label "Country"@iri-based, "country"@en .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/City> a owl:Class;  
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Geodata.json/City> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "City"@iri-based, "city"@en .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Postal_code> a owl:Class;  
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Geodata.json/Postal_code> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Postal_code"@iri-based, "postal_code"@en .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/State> a owl:Class;  
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Geodata.json/State> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "State"@iri-based, "state"@en .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Region> a owl:Class;  
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Geodata.json/Region> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Region"@iri-based, "region"@en .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Timezone> a owl:Class;  
+	owl:equivalentClass <http://www.fraudanalytix.com/schema/f/Geodata.json/Timezone> ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Timezone"@iri-based, "timezone"@en .
+
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/haslocationid> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haslocationid"@iri-based, "haslocationid"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Location_id> . 
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/haslatitude> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haslatitude"@iri-based, "haslatitude"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Latitude> .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/haslongitude> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haslongitude"@iri-based, "haslongitude"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Longitude> .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hascity> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascity"@iri-based, "hascity"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/City> .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasstate> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasstate"@iri-based, "hasstate"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/State> .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/haspostalcode> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "haspostalcode"@iri-based, "haspostalcode"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Postal_code> .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hascountry> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hascountry"@iri-based, "hascountry"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Country> .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hasregion> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hasregion"@iri-based, "hasregion"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Region> .
+
+<http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/hastimezone> a owl:ObjectProperty ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "hastimezone"@iri-based, "hastimezone"@en; 
+	rdfs:domain <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet>;
+	rdfs:range <http://www.fraudanalytix.com/schema/e/joined_clientA_transactions_2023-05-31_10-57-05_mcc_geodata.parquet/Timezone> .

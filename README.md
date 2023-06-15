@@ -15,6 +15,10 @@ Fraud Analytix relies on primary data sources such as transactions data and Geo 
  - GraphDB
  - RDFLib
 
-## Graph
+## Graph 
 
 <img alt="graph" height="900" src="./raw/fa-mapping-tbox.svg"/>
+
+## Complete ABOX
+
+<img alt="graph" height="900" src="./raw/FA-abox.svg"/>
