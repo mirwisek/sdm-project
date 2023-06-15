@@ -21,4 +21,4 @@ Fraud Analytix relies on primary data sources such as transactions data and Geo 
 
 ## Complete ABOX
 
-<img alt="graph" height="900" src="./raw/FA-abox.svg"/>
+<img alt="graph" width="1000" src="./raw/FA-abox.svg"/>
